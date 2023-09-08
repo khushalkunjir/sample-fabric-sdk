@@ -1,0 +1,397 @@
+{
+	"info": {
+		"_postman_id": "8270d602-bda5-414a-973e-6b0d091de681",
+		"name": "Asset Transfer Basic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "khushal",
+							"type": "text"
+						},
+						{
+							"key": "orgName",
+							"value": "Org1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{baseUrl}}/register",
+					"protocol": "http",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "amit",
+									"type": "text"
+								},
+								{
+									"key": "orgName",
+									"value": "Org1",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{baseUrl}}/register",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "265"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"109-0bf7aRTpD8egqPwZb6YPDayB8MA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 05 Oct 2021 11:58:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": \"amit enrolled Successfully\",\n    \"secret\": \"CCtbfxUdBUEo\",\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzM0NzExMjYsInVzZXJuYW1lIjoiYW1pdCIsIm9yZ05hbWUiOiJPcmcxIiwiaWF0IjoxNjMzNDM1MTI2fQ.McaGnSIpxdBY4ZtRaCUQKOAzJMwst0Lox9gplWeLgFo\"\n}"
+				}
+			]
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "appuser",
+							"type": "text"
+						},
+						{
+							"key": "orgName",
+							"value": "Org1",
+							"type": "text"
+						},
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://{{baseUrl}}/users/login",
+					"protocol": "http",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "User Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "appuser",
+									"type": "text"
+								},
+								{
+									"key": "orgName",
+									"value": "Org1",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://{{baseUrl}}/users/login",
+							"protocol": "http",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "218"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"da-05RsZQ+4TB9y/azTHvyjkqqFl1Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Oct 2021 06:52:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"message\": {\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MzQwNTc1MjgsInVzZXJuYW1lIjoiYXBwdXNlciIsIm9yZ05hbWUiOiJPcmcxIiwiaWF0IjoxNjM0MDIxNTI4fQ.H0zjP1AzBZgQaKnZikDHFHFfHz47q2BWAQ3atr0sCiw\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "add asset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fcn\": \"CreateAsset\",\n    \"chaincodeName\":\"basic\",\n    \"channelName\": \"mychannel\",\n    \"args\": [\"asset13\", \"yellow\", \"5\", \"Tom\", \"1300\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{baseUrl}}/channels/mychannel/chaincodes/basic",
+					"protocol": "http",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"channels",
+						"mychannel",
+						"chaincodes",
+						"basic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Asset",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"fcn\": \"UpdateAsset\",\n    \"chaincodeName\":\"basic\",\n    \"channelName\": \"mychannel\",\n    \"args\": [\"asset13\", \"Blue\", \"9\", \"Tom123\", \"1600\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{baseUrl}}/channels/mychannel/chaincodes/basic",
+					"protocol": "http",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"channels",
+						"mychannel",
+						"chaincodes",
+						"basic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get aseet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseUrl}}/channels/mychannel/chaincodes/example?args=[\"asset13\"]&fcn=ReadAsset",
+					"protocol": "http",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"channels",
+						"mychannel",
+						"chaincodes",
+						"example"
+					],
+					"query": [
+						{
+							"key": "args",
+							"value": "[\"asset13\"]"
+						},
+						{
+							"key": "fcn",
+							"value": "ReadAsset"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all aseet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://{{baseUrl}}/channels/mychannel/chaincodes/basic?args=[\"\"]&fcn=GetAllAssets",
+					"protocol": "http",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"channels",
+						"mychannel",
+						"chaincodes",
+						"basic"
+					],
+					"query": [
+						{
+							"key": "args",
+							"value": "[\"\"]"
+						},
+						{
+							"key": "fcn",
+							"value": "GetAllAssets"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "localhost:4000",
+			"type": "default"
+		},
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTQxMTM4NjgsInVzZXJuYW1lIjoia2h1c2hhbDEiLCJvcmdOYW1lIjoiT3JnMSIsImlhdCI6MTY5NDA3Nzg2OH0.njC9be9XYprx0cl3QKcPgEVSm3X90sTDZXECi4s2Ask",
+			"type": "default"
+		}
+	]
+}
